@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Perasaan</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <h1>Cari Informasi</h1>
+
+    <div id="start-container">
+        <p>Selamat datang di Web Cari Informasi 🌸</p>
+        <p>Web ini saya buat karena terinspirasi dari teman saya yang bernama Yohanes Krisotomus Adi Prasetya yang gagal mendapatkan 9 wanita. oleh karena itu saya membuat ini untuk mencari informasi tentang dia. </p>
+        <input type="text" id="userName" placeholder="Masukkan nama kamu" required>
+        <button onclick="startQuiz()">Mulai Kuis</button>
+        
+    </div>
+    
+
+
+    <!-- Kuis Dimulai Setelah Nama Dimasukkan -->
+    <div id="quiz-container" style="display: none;">
+        <!-- Pertanyaan 1 -->
+        <div class="question-container" id="question1">
+            <img id="sticker1" class="sticker" alt="sticker">
+            <p>Apakah kamu merasa senang ketika bertemu dengan orang tertentu?</p>
+            <button onclick="nextQuestion(1)">Ya</button>
+            <button onclick="nextQuestion(2)">Tidak</button>
+        </div>
+        
+        <!-- Pertanyaan 2 -->
+        <div class="question-container" id="question2" style="display: none;">
+            <img id="sticker2" class="sticker" alt="sticker">
+            <p>Apakah kamu pernah merasa cemas ketika mereka tidak ada di dekatmu?</p>
+            <button onclick="nextQuestion(3)">Ya</button>
+            <button onclick="nextQuestion(4)">Tidak</button>
+        </div>
+
+        <!-- Pertanyaan 3 -->
+        <div class="question-container" id="question3" style="display: none;">
+            <img id="sticker3" class="sticker" alt="sticker">
+            <p>Apakah kamu merasa lebih bahagia ketika mereka tersenyum?</p>
+            <button onclick="nextQuestion(5)">Ya</button>
+            <button onclick="nextQuestion(6)">Tidak</button>
+        </div>
+
+        <!-- Pertanyaan 4 -->
+        <div class="question-container" id="question4" style="display: none;">
+            <img id="stickerImage" class="sticker" alt="sticker">
+            <p>Siapakah orang yang kamu sukai atau cintai?</p>
+            <input type="text" id="nameInput" placeholder="Masukkan nama orang yang kamu sukai">
+            <button onclick="showResult()">Kirim</button>
+        </div>
+    </div>
+
+    <!-- Hasil dan Motivasi -->
+    <div id="result" style="display: none;">
+        <div class="heart">❤️</div>
+        <h2>Terima kasih telah mengikuti kuis ini!</h2>
+        <h3>Orang yang kamu sukai atau cintai adalah: <span id="likedPerson"></span></h3>
+        <div id="motivasi"></div>
+        <button onclick="restartQuiz()">Mulai Lagi</button>
+        <button onclick="shareToWhatsApp()">Bagikan ke WhatsApp</button>
+        <button onclick="captureAndDownloadScreenshot()">Kirim data ke admin @Yhns</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&#169; 2024 Web Admin YHNS </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

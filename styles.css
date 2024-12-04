@@ -1,0 +1,263 @@
+/* Kata Pengantar */
+#start-container p {
+    font-size: 1.2em;
+    color: #555; /* Warna abu-abu muda untuk teks */
+    margin-bottom: 15px;
+}
+
+#start-container p:first-of-type {
+    font-size: 1.4em; /* Teks pertama (judul pengantar) sedikit lebih besar */
+    color: #FF5722; /* Warna oranye untuk memberi penekanan */
+    font-weight: bold;
+}
+
+
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+    transition: all 0.3s ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header */
+h1 {
+    font-size: 3em;
+    color: #2c3e50;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #16a085;
+    margin-bottom: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+p {
+    font-size: 1.4em;
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+/* Start Container */
+#start-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+}
+
+#start-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#userName {
+    font-size: 1.2em;
+    padding: 12px;
+    border: 2px solid #16a085;
+    border-radius: 25px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+#userName:focus {
+    border-color: #2c3e50;
+    outline: none;
+}
+
+button {
+    font-size: 1.3em;
+    background-color: #16a085;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.6s forwards;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+/* Stickers animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Question Container */
+.question-container {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+}
+
+.sticker {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Result Section */
+#result {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+}
+
+.heart {
+    font-size: 3em;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    animation: heartBeat 1s infinite;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#motivasi {
+    font-size: 1.4em;
+    color: #16a085;
+    margin-top: 20px;
+    font-weight: 600;
+    border: 3px solid #4CAF50;
+    background-color: #FFEB3B;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Footer Styling */
+/* Footer Styling */
+/* Footer Styling */
+footer {
+    border-top: 1px solid #ccc; /* Garis tipis berwarna abu-abu */
+    color: #888; /* Warna abu-abu untuk teks */
+    font-size: 0.9em; /* Ukuran font kecil */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+/* Input Styling */
+#nameInput {
+    font-size: 1.2em;
+    padding: 12px;
+    border: 2px solid #16a085;
+    border-radius: 25px;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #ecf0f1;
+}
+
+/* Small Screens */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #start-container {
+        padding: 20px;
+    }
+
+    .question-container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+
+    #motivasi {
+        font-size: 1.3em;
+    }
+
+    #result {
+        width: 100%;
+    }
+
+    .heart {
+        font-size: 2.5em;
+    }
+
+    #nameInput {
+        width: 100%;
+    }
+}
