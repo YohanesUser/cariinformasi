@@ -2,12 +2,38 @@ let currentQuestion = 1;
 let userName = '';
 let answers = [];
 let motivasiList = [
-    "Cinta itu indah dan penuh warna!",
-    "Jangan takut untuk jatuh cinta, karena cinta membawa kebahagiaan.",
-    "Cinta adalah perjalanan yang membuat hidup lebih berwarna.",
-    "Setiap perasaan yang kamu rasakan adalah bagian dari kisah cintamu.",
-    "Cinta sejati akan datang pada waktunya, tetap sabar dan percaya."
-];
+    "Kesuksesan bukanlah kunci kebahagiaan, kebahagiaan adalah kunci kesuksesan.",
+    "Jangan berhenti berusaha, karena setiap langkah kecil membawa kita lebih dekat pada impian.",
+    "Hidup tidak selalu mudah, tetapi setiap tantangan adalah kesempatan untuk tumbuh.",
+    "Percayalah pada dirimu sendiri, karena kamu lebih kuat dari yang kamu kira.",
+    "Jangan biarkan kegagalan menghentikanmu, itu hanya batu loncatan menuju kesuksesan.",
+    "Bekerja keraslah hari ini untuk masa depan yang lebih cerah.",
+    "Waktu tidak akan menunggu, jadi lakukan yang terbaik sekarang.",
+    "Hidupmu adalah hasil dari pilihan-pilihan yang kamu buat.",
+    "Tetaplah positif, meski dunia terkadang terlihat gelap.",
+    "Jangan menunggu kesempatan datang, ciptakan kesempatanmu sendiri.",
+    "Percayalah, hal-hal baik akan datang ketika kamu berusaha dengan sepenuh hati.",
+    "Kegagalan bukan akhir dari segalanya, itu hanya permulaan untuk mencapai keberhasilan.",
+    "Jangan pernah menyerah, karena setiap usaha akan membuahkan hasil pada waktunya.",
+    "Kesulitan adalah ujian, dan ujian adalah kesempatan untuk menunjukkan kekuatanmu.",
+    "Hidup ini bukan tentang menunggu badai berlalu, tetapi tentang belajar menari di tengah hujan.",
+    "Jangan takut untuk mencoba hal baru, karena di situlah kamu akan menemukan potensi sejati.",
+    "Setiap langkah kecil yang kamu ambil hari ini, membawa perubahan besar di masa depan.",
+    "Keberanian bukan berarti tidak merasa takut, tetapi tetap melangkah meskipun ada rasa takut.",
+    "Jadilah dirimu sendiri, karena kamu tidak perlu menjadi orang lain untuk sukses.",
+    "Mimpi besar dimulai dari langkah kecil yang berani diambil.",
+    "Terkadang, kamu harus merasakan kegagalan untuk memahami arti sejati dari kesuksesan.",
+    "Hidup ini penuh dengan peluang, jangan sia-siakan setiap kesempatan yang datang.",
+    "Jangan terlalu lama meratapi masa lalu, fokuslah pada apa yang bisa kamu capai di masa depan.",
+    "Keberhasilan bukan tentang apa yang kamu miliki, tetapi tentang siapa kamu menjadi.",
+    "Hidup ini adalah perjalanan, bukan tujuan. Nikmati setiap langkah yang kamu ambil.",
+    "Jika kamu ingin melihat perubahan, mulailah dari diri sendiri.",
+    "Terkadang hal terbaik datang setelah perjuangan panjang, jangan pernah berhenti berjuang.",
+    "Kesuksesan adalah hasil dari kerja keras, ketekunan, dan keyakinan pada diri sendiri.",
+    "Belajarlah dari masa lalu, tetapi jangan biarkan itu menghalangi langkahmu ke depan.",
+    "Jangan biarkan ketakutan menghalangi kamu untuk meraih impianmu."
+]
+;
 
 let currentMotivasi = ''; // Menyimpan motivasi yang sedang tampil
 
@@ -79,7 +105,7 @@ function restartQuiz() {
 function shareToWhatsApp() {
     let likedPerson = document.getElementById('likedPerson').textContent;
     let motivasi = document.getElementById('motivasi').textContent;
-    let message = `Aku mengikuti BAGI BAGI INFO PACAR, dan orang yang aku sukai adalah: ${likedPerson}. Motivasi untukku dari sana adalah: ${motivasi} *yang ingin mencoba link:`;
+    let message = `Aku mengikuti BAGI BAGI INFO PACAR, dan orang yang aku sukai adalah: ${likedPerson}. Motivasi untukku dari sana adalah: ${motivasi} link:cariinformasi.vercel.app/`;
     let url = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
 }
